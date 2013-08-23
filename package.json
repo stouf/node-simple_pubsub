@@ -1,5 +1,5 @@
 {
-  "name": "SimplePubSub",
+  "name": "simplepubsub",
   "version": "0.0.1",
   "description": "A Simple PubSub Framework, working locally, with regexp feature.",
   "main": "index.js",

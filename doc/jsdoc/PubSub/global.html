@@ -328,7 +328,280 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="PubSub.js.html">PubSub.js</a>, <a href="PubSub.js.html#line43">line 43</a>
+        <a href="PubSub.js.html">PubSub.js</a>, <a href="PubSub.js.html#line47">line 47</a>
+    </li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="regexpSubscribe"><span class="type-signature"></span>regexpSubscribe<span class="signature">(channels, callback)</span><span class="type-signature"></span></h4>
+    
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>channels</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">Array of regexp Objects.</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#regexpSubscribeCallback">regexpSubscribeCallback</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">The function called when a publish has been received.</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="PubSub.js.html">PubSub.js</a>, <a href="PubSub.js.html#line205">line 205</a>
+    </li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="regexpUnsubscribe"><span class="type-signature"></span>regexpUnsubscribe<span class="signature">(channels, fn)</span><span class="type-signature"></span></h4>
+    
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>channels</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">Array of regexp objects.</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>fn</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Function</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">*Optional parameter*
+                               If given, unsubscribe only for the given function</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="PubSub.js.html">PubSub.js</a>, <a href="PubSub.js.html#line159">line 159</a>
     </li></ul></dd>
     
     
@@ -601,7 +874,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="PubSub.js.html">PubSub.js</a>, <a href="PubSub.js.html#line88">line 88</a>
+        <a href="PubSub.js.html">PubSub.js</a>, <a href="PubSub.js.html#line113">line 113</a>
     </li></ul></dd>
     
     
@@ -633,6 +906,146 @@
         <h3 class="subsection-title">Type Definitions</h3>
         
         <dl>
+                
+<dt>
+    <h4 class="name" id="regexpSubscribeCallback"><span class="type-signature"></span>regexpSubscribeCallback<span class="signature">(channel, args)</span><span class="type-signature"></span></h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Called when a publish has been received.
+    </div>
+    
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>channel</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">The channel onto which the publish has been received</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>args</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">The arguments given for the publish.</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="PubSub.js.html">PubSub.js</a>, <a href="PubSub.js.html#line235">line 235</a>
+    </li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+            
                 
 <dt>
     <h4 class="name" id="subscribeCallback"><span class="type-signature"></span>subscribeCallback<span class="signature">(channel, args)</span><span class="type-signature"></span></h4>
@@ -747,7 +1160,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="PubSub.js.html">PubSub.js</a>, <a href="PubSub.js.html#line39">line 39</a>
+        <a href="PubSub.js.html">PubSub.js</a>, <a href="PubSub.js.html#line43">line 43</a>
     </li></ul></dd>
     
     
@@ -786,13 +1199,13 @@
 </div>
 
 <nav>
-    <h2><a href="index.html">Index</a></h2><h3>Classes</h3><ul><li><a href="PubSub.html">PubSub</a></li></ul><h3>Global</h3><ul><li><a href="global.html#_regexpSubscribings">_regexpSubscribings</a></li><li><a href="global.html#_subscribings">_subscribings</a></li><li><a href="global.html#publish">publish</a></li><li><a href="global.html#subscribe">subscribe</a></li><li><a href="global.html#unsubscribe">unsubscribe</a></li></ul>
+    <h2><a href="index.html">Index</a></h2><h3>Classes</h3><ul><li><a href="PubSub.html">PubSub</a></li></ul><h3>Global</h3><ul><li><a href="global.html#_regexpSubscribings">_regexpSubscribings</a></li><li><a href="global.html#_subscribings">_subscribings</a></li><li><a href="global.html#publish">publish</a></li><li><a href="global.html#regexpSubscribe">regexpSubscribe</a></li><li><a href="global.html#regexpUnsubscribe">regexpUnsubscribe</a></li><li><a href="global.html#subscribe">subscribe</a></li><li><a href="global.html#unsubscribe">unsubscribe</a></li></ul>
 </nav>
 
 <br clear="both">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.2.0</a> on Fri Aug 23 2013 11:28:28 GMT+0200 (CEST)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.2.0</a> on Fri Aug 23 2013 11:58:39 GMT+0200 (CEST)
 </footer>
 
 <script> prettyPrint(); </script>

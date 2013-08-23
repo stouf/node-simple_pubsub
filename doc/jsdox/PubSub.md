@@ -49,3 +49,26 @@ If given, unsubscribe only for the given function
 
 **fn**:  *Function*,  *Optional parameter*
 
+PubSub.regexpUnsubscribe(channels, fn)
+--------------------------------------
+If given, unsubscribe only for the given function
+
+
+**Parameters**
+
+**channels**:  *Array*,  Array of regexp objects.
+
+**fn**:  *Function*,  *Optional parameter*
+
+PubSub.regexpSubscribe(channels, callback, channel, args)
+---------------------------------------------------------
+**Parameters**
+
+**channels**:  *Array*,  Array of regexp Objects.
+
+**callback**:  *regexpSubscribeCallback*,  The function called when a publish has been received.
+
+**channel**:  *String*,  The channel onto which the publish has been received
+
+**args**:  *Array*,  The arguments given for the publish.
+

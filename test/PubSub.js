@@ -42,3 +42,49 @@ exports.unsubscribe = function (test) {
 
   test.done();
 };
+
+// #####################################################################################################################
+
+/**
+ * @function  regexpSubscribe
+ *
+ * @param {Object}  test  The Object provided by the nodeunit module.
+ */
+exports.regexpSubscribe = function (test) {
+  var baseChannel = 'regexp';
+  var regexp = new RegExp((baseChannel +  '.*'), 'g');
+
+  var numOfCall = 0;
+  var targetedNumOfCall = 3;
+
+  var onPublish = function (channel, args) {
+    if (++numOfCall === targetedNumOfCall) {
+      test.ok(true);
+      test.done();
+    }
+  };
+
+  pubsub.regexpSubscribe([regexp], onPublish);
+
+  for (var i = 0; i < targetedNumOfCall; i++) {
+    pubsub.publish([(baseChannel + '' + i)]);
+  }
+};
+
+// #####################################################################################################################
+
+/**
+ * @function  regexpUnsubscribe
+ *
+ * @param {Object}  test  The Object provided by the nodeunit module.
+ */
+exports.regexpUnsubscribe = function (test) {
+  var regexp = new RegExp('unsubregexp*', 'g');
+
+  pubsub.regexpSubscribe([regexp], function () {});
+
+  pubsub.regexpUnsubscribe([regexp]);
+
+  test.strictEqual(pubsub._regexpSubscribings[regexp], undefined);
+  test.done();
+};

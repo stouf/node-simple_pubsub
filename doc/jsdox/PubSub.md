@@ -37,3 +37,15 @@ as many arguments as you want to spread ;-)
 **args**:  *Mixed*,  
 
 
+PubSub.unsubscribe(channels, fn)
+--------------------------------
+If given, unsubscribe only for the given function
+
+
+**Parameters**
+
+**channels**:  *Array*,  
+
+
+**fn**:  *Function*,  *Optional parameter*
+

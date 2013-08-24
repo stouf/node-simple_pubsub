@@ -24,11 +24,6 @@ PubSub.subscribe(channels, callback, channel, args)
 
 PubSub.publish(channels, args)
 ------------------------------
-as many arguments as you want to spread ;-)
-
-
-
-
 **Parameters**
 
 **channels**:  *Array*,  
@@ -39,26 +34,20 @@ as many arguments as you want to spread ;-)
 
 PubSub.unsubscribe(channels, fn)
 --------------------------------
-If given, unsubscribe only for the given function
-
-
 **Parameters**
 
 **channels**:  *Array*,  
 
 
-**fn**:  *Function*,  *Optional parameter*
+**fn**:  *Function*,  *Optional parameter* If given, unsubscribe only for the given function
 
 PubSub.regexpUnsubscribe(channels, fn)
 --------------------------------------
-If given, unsubscribe only for the given function
-
-
 **Parameters**
 
 **channels**:  *Array*,  Array of regexp objects.
 
-**fn**:  *Function*,  *Optional parameter*
+**fn**:  *Function*,  *Optional parameter* If given, unsubscribe only for the given function
 
 PubSub.regexpSubscribe(channels, callback, channel, args)
 ---------------------------------------------------------

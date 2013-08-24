@@ -1,6 +1,6 @@
 {
   "name": "simplepubsub",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Simple PubSub Framework, working locally, with regexp feature.",
   "main": "index.js",
   "scripts": {
@@ -10,12 +10,14 @@
     "nodeunit": ">=0.8.1",
     "jsdoc": ">=3.2.0",
     "jshint": ">=2.1.8",
-    "jsdox": ">=0.2.1"
+    "jsdox": "git://github.com/stouf/jsdox.git"
   },
   "keywords": [
     "node",
     "pubsub"
   ],
-  "author": "Stouf",
+  "author": {
+    "name": "Stouf"
+  },
   "license": "BSD-2-Clause"
 }
